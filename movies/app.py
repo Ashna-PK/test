@@ -1,11 +1,6 @@
 import database
 import datetime
 
-
-def prompt_add_user():
-    username=input("username: ")
-    database.add_user(username)
-
 def print_movie_list(heading,movies):
     print(f"--- {heading} movies ---")
     for _id,title,release_date in movies:
