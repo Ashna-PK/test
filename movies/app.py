@@ -34,7 +34,7 @@ menu = """Please select one of the following options:
 
 Your selection: """
 welcome = "Welcome to the watchlist app!"
-
+#hello how are you
 print(welcome)
 database.create_tables()
 
