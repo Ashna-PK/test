@@ -1,14 +1,6 @@
 import database
 import datetime
 
-def prompt_add_movie():
-    title = input("movie title: ")
-    release_date = input("release date (dd-mm-yyyy): ")
-    parsed_date = datetime.datetime.strptime(release_date,"%d-%m-%Y")
-    timestamp = parsed_date.timestamp()
-    
-    database.add_movie(title,timestamp)
-
 def print_movie_list(heading,movies):
     print(f"--- {heading} movies ---")
     for _id,title,release_date in movies:
